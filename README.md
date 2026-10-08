@@ -1,39 +1,28 @@
 # squatmastr78 Mac SBPE
 
-A community macOS port/customization of the StarBreak Plugin Engine (SBPE),
-based on atomizer/sbpe.
+A community macOS port/customization of the **StarBreak Plugin Engine (SBPE)**, based on the original SBPE by **atomizer**.
 
-## Target setup
+This version is intended for **Apple Silicon Macs** running StarBreak's Intel/x86_64 Mac client through Rosetta.
 
-- macOS on Apple Silicon, running the Intel/x86_64 StarBreak client through Rosetta
-- Steam StarBreak installed in the normal Steam location
-- Apple Command Line Tools installed
-- Internet connection for first setup so Python can install `cffi`
+The source code is available directly in this repository so you can inspect what the release is doing before downloading or running it.
 
-## Install
+## Download
 
-1. Extract this ZIP somewhere in your home folder.
-2. Quit StarBreak.
-3. Double-click `BUILD.command`.
-4. After a successful build, double-click `RUN.command`.
+Go to:
 
-If macOS blocks a `.command` file, right-click it -> Open.
+https://github.com/squatmastr78/squatmastr78-mac-SBPE/releases/latest
 
-If Command Line Tools are missing, run:
+For v1.0, download the release asset named:
 
-    xcode-select --install
+`Squatmastr78-Mac-SBPE-REDDIT-SAFE.zip`
 
-## Important
+### v1.0 SHA-256
 
-Do not run this at the same time as another SBPE/SBZoom-style injector.
+The verified SHA-256 for the v1.0 public ZIP is:
 
-This is an unofficial community modification.
+`cd3da73f266587cb514c3b4460cb48af9caacc5903b944c8bf8357e616423ab0`
 
-## Credits / license
+On macOS you can verify it with:
 
-Based on atomizer/sbpe. The upstream SBPE README states that atomizer's code is
-licensed under ISC, with third-party components retaining their own licenses.
-The original README and third-party files are kept in this package; review
-those files before redistributing modified copies.
-
-Mac port/customization: squatmastr78.
+```bash
+shasum -a 256 squatmastr78-Mac-SBPE-REDDIT-SAFE.zip
